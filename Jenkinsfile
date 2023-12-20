@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Your build steps go here
-                sh './mvnw clean install' // Assuming you are using Maven for Java projects
+                sh './eureka-server/mvnw clean install' // Assuming you are using Maven for Java projects
             }
         }
 
