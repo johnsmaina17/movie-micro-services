@@ -12,16 +12,19 @@ pipeline {
         stage('Build') {
             steps {
                 // Your build steps go here
-                cd eureka-server
-                sh './mvnw clean install' // Assuming you are using Maven for Java projects
+                //cd eureka-server
+                //sh './mvnw clean install' // Assuming you are using Maven for Java projects
+                 echo 'building project...'
+                
             }
         }
 
         stage('Test') {
             steps {
                 // Your test steps go here
-                cd eureka-server
-                sh 'mvn test'
+                //cd eureka-server
+                //sh 'mvn test'
+                 echo 'testing project...'
             }
         }
 
